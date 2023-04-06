@@ -1,0 +1,51 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-6" *ngIf= "LipstickData">
+            <a routerLink="/Lipstick" class="btn btn-sm btn-dark mb-3">Back</a>
+            <img src="{{LipstickData[0].lipImage}}" width="100%"/>
+            
+
+
+
+        </div>
+            <div class="col-lg-6 mt-5 mb-5">
+
+                <h1 class="mt-5">{{LipstickData[0].lipName}}</h1>
+                <h2>{{LipstickData[0].lipPrice}}</h2>
+
+
+                <form>
+
+                    <input type="text" class="form-control" placeholder="First Name"><br>
+                    <input type="number" class="form-control" placeholder="Quantity"><br>
+                    <button type="button" class="form-control">Buy Now</button>
+                    
+
+                    
+
+                </form>
+
+            </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-4 mt-3" *ngFor= "let l of lipstick;index as i">
+            <div class="foodbox" *ngIf= "i<=2">
+                <img src="{{l.lipImage}}"/>
+                <h1>{{l.lipName}}</h1>
+                <h3>{{l.lipPrice}}</h3>
+                <button class="but" mat-raised-button color="accent" [routerLink]= "['/Lipstick/manupage',l.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+    </div>
+</div>

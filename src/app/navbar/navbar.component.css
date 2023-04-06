@@ -1,0 +1,31 @@
+.navbar-light .navbar-nav .nav-link.active-link
+{
+  color: palevioletred;
+  font-weight: bold;
+}
+
+.nav-link
+{
+  color: black;
+  font-size: 15px;
+}
+.active-link{
+  font-weight: bold;
+
+}
+.navbar-brand{
+
+  font-weight: bold;
+  padding-left: 6rem;
+}
+
+@media screen and (max-width:600px)
+{
+  .navbar-brand{
+
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+  
+}
+

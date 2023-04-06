@@ -1,0 +1,53 @@
+<section class="home">
+    <img class="img" src="assets/image/ww.jpg">
+    <div class="homecontent">
+        <h1>CREATE FLAWLESS SKIN</h1>
+        <a href="#" class="btn btn-lg btn-light">BUY NOW</a>
+    </div>
+</section>
+<br><br><br>
+
+<h1 class="h1">Hot Seller Product </h1>
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-4 mt-3" *ngFor= "let Id of itemData;index as i">
+            <div class="foodbox" *ngIf= "i<=2">
+                <img src="{{Id.itemImage}}"/>
+                <h2>{{Id.itemName}}</h2>
+                <p>{{Id.itemPrice}}</p>
+                <button class="but" mat-raised-button color="accent">ADD TO CART&nbsp;<i class="bi bi-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="banner">
+    <br><br><br><br><br><br>
+    <h1 class="h">Check Out The Latest Beauty Cosmetics Collection</h1>
+    <h3>You are always a shopper in this luxurious intense skin and fresh ever skin tone.</h3>
+    <button class="but2" mat-raised-button color="accent">SHOP NOW</button>
+</div>
+
+<br><br>
+
+<h1 class="h1">Features Categories</h1>
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor= "let It of itemType">
+            <div class="foodbox2">
+                <img src="{{It.typeImage}}"/>
+                <button mat-button class="but1" routerLink="Lipstick">{{It.typeName}}</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-4 mt-3" *ngFor= "let l of lipstick ">
+            <div class="foodbox">
+                <img src="{{l.lipImage}}"/>
+                <h1>{{l.lipName}}</h1>
+                <h3>{{l.lipPrice}}</h3>
+                <button class="but" mat-raised-button color="accent" [routerLink]= "['/Lipstick',l.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></button>
+            </div>
+
+        </div>
+    </div>
+</div>
